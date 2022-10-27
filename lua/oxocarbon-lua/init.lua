@@ -154,7 +154,7 @@ return {
 
     -- window
     highlight('Title', 5, none)
-    highlight('VertSplit', 2, 1)
+    highlight('VertSplit', 21, none)
 
     -- regular syntax
     highlight('Boolean', 10, none)
@@ -188,6 +188,11 @@ return {
     highlight('Todo', 14, none)
     highlight('Type', 10, none)
     highlight('Typedef', 10, none)
+
+    -- neotree
+    highlight('NeoTreeDirectoryIcon', 16, none)
+    highlight('NeoTreeDirectoryName', 16, none)
+    highlight('NeoTreeCursorLine', none, 2)
 
     -- treesitter
     highlight('TSAnnotation', 13, none)

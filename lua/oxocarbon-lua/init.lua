@@ -86,7 +86,7 @@ return {
 		-- editor
 		highlight('ColorColumn', none, 2)
     highlight('Cursor', 1, 5)
-    highlight('CursorLine', none, 2)
+    highlight('CursorLine', none, none)
     highlight('CursorColumn', none, 2)
     highlight('CursorLineNr', 5, conditional_bg(none))
     highlight('QuickFixLine', none, 2)
@@ -192,7 +192,7 @@ return {
     -- neotree
     highlight('NeoTreeDirectoryIcon', 16, none)
     highlight('NeoTreeDirectoryName', 16, none)
-    highlight('NeoTreeCursorLine', none, 2)
+    highlight('NeoTreeCursorLine', none, 22)
 
     -- treesitter
     highlight('TSAnnotation', 13, none)
@@ -272,30 +272,17 @@ return {
     highlight('StatusCommand', 20, 1, {'underline'})
 
     -- telescope
-		if vim.g.oxocarbon_lua_alternative_telescope then
-			highlight('TelescopeBorder', 4, none)
-			highlight('TelescopePromptNormal', 6, none)
-			highlight('TelescopePromptPrefix', 8, none)
-			
-			highlight('TelescopeNormal', 5, none)
-			
-			highlight('TelescopePreviewTitle', 19, none)
-			highlight('TelescopePromptTitle', 19, none)
-			highlight('TelescopeResultsTitle', 19, none)
-			
-			highlight('TelescopeSelection', none, 3)
-		else
-			highlight('TelescopeBorder', 17, 17)
-			highlight('TelescopePromptBorder', 3, 3)
-			highlight('TelescopePromptNormal', 6, 3)
-			highlight('TelescopePromptPrefix', 9, 3)
-			highlight('TelescopeNormal', none, 17)
-			highlight('TelescopePreviewTitle', 3, 12)
-			highlight('TelescopePromptTitle', 3, 9)
-			highlight('TelescopeResultsTitle', 17, 17)
-			highlight('TelescopeSelection', none, 3)
-			highlight('TelescopePreviewLine', none, 2)
-		end
+    highlight('TelescopeBorder', 10, none)
+    highlight('TelescopePromptNormal', 5, none)
+    highlight('TelescopePromptPrefix', 8, none)
+    
+    highlight('TelescopeNormal', 5, none)
+    
+    highlight('TelescopePreviewTitle', 10, none)
+    highlight('TelescopePromptTitle', 10, none)
+    highlight('TelescopeResultsTitle', 10, none)
+    
+    highlight('TelescopeSelection', none, 2)
 
     -- notify
     highlight('NotifyERRORBorder', 9, none)
